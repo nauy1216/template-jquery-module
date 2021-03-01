@@ -5,7 +5,7 @@ import {IHiComponent} from './types/index'
 import dom, {Fragment}from './core/dom/dom'
 
 
-export default function HiComponent(this: IHiComponent):IHiComponent {
+export default function HiComponent(this: IHiComponent): IHiComponent {
     console.log('constructor6666')
     this.context  = new Context()
     this.eventBus = new EventEmitter()
@@ -33,6 +33,7 @@ HiComponent.prototype = {
         
     }
 }
+
 HiComponent.EventEmitter = EventEmitter
 HiComponent.dom = dom
 HiComponent.Fragment = Fragment

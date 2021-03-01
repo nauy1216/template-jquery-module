@@ -53,6 +53,7 @@ function App() {
 }  
 
 console.time('test')
+debugger
 let Context = new HiComponent()
 
 let app = App()

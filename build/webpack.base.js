@@ -7,7 +7,7 @@ function resolve(source) {
 module.exports = env => {
     return {
         mode: 'development',
-        devtool: 'inline-source-map',
+        devtool: 'source-map',
         entry: {
             app: path.resolve(process.cwd(), 'example/main.js')
         },
